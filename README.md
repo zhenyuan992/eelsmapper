@@ -14,4 +14,3 @@ STEM-EELS data is high-dimensional and noisy, making it challenging to interpret
 - Identifying correlated elemental regions (Mutual Information)
 - Enhancing signal quality (Vector Quantization)
 - Discovering new material phases without needing reference spectra
-
