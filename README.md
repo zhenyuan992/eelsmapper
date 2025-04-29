@@ -9,7 +9,7 @@
 STEM-EELS data is high-dimensional and noisy, making it challenging to interpret with traditional methods. **eelsmapper** offers a robust, modular pipeline for:
 
 - Denoising spectra (PCA)
-- Visualizing compositional patterns (t-SNE)
+- Visualizing compositional patterns (t-SNE and/or UMAP)
 - Clustering spectra (K-Means)
 - Identifying correlated elemental regions (Mutual Information)
 - Enhancing signal quality (Vector Quantization)
