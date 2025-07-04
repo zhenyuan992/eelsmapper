@@ -17,3 +17,7 @@ def run_pipeline(X):
         "vq": X_vq,
         "mutual_info": mi_matrix
     }
+
+def test_output():
+    print("hello world")
+    
