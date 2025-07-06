@@ -2,6 +2,8 @@
 
 **eelsmapper** is a data-driven pipeline for analyzing STEM-EELS spectra to perform high-resolution compositional mapping without relying on reference spectra. It integrates PCA, t-SNE (and/or UMAP), clustering, mutual information, and vector quantization to uncover subtle chemical differences and discover novel material phases.
 
+![Overall schematic of eelsmapper](image.png)
+
 ---
 
 ## Purpose
@@ -14,6 +16,7 @@ STEM-EELS data is high-dimensional and noisy, making it challenging to interpret
 - Identifying correlated elemental regions (Mutual Information)
 - Enhancing signal quality (Vector Quantization)
 - Discovering new material phases without needing reference spectra
+
 
 ---
 
