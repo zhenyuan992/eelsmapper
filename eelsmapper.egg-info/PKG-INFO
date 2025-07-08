@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: eelsmapper
-Version: 0.2.1
+Version: 0.2.2
 Summary: Data-driven analysis pipeline for STEM-EELS spectra
 Author: Yeo Zhen Yuan
 Author-email: yeozy@nus.edu.sg
@@ -9,6 +9,7 @@ Description-Content-Type: text/markdown
 Requires-Dist: numpy
 Requires-Dist: scikit-learn
 Requires-Dist: matplotlib
+Requires-Dist: umap-learn
 Dynamic: author
 Dynamic: author-email
 Dynamic: description
@@ -17,13 +18,13 @@ Dynamic: requires-dist
 Dynamic: requires-python
 Dynamic: summary
 
-# eelsmapper
+# [eelsmapper](https://zhenyuan992.github.io/eelsmapper/index.html)
 
 <!-- <div align="center"><img src="logo/logo_eelsmapper.png" alt="Logo of eelsmapper" width="50%" /></div> -->
 
 <div align="center"><img src="https://raw.githubusercontent.com/zhenyuan992/eelsmapper/refs/heads/main/logo/logo_eelsmapper.png" alt="Logo of eelsmapper" width="50%" /></div>
 
-**eelsmapper** is a data-driven pipeline for analyzing STEM-EELS spectra to perform high-resolution compositional mapping without relying on reference spectra. It integrates PCA, t-SNE (and/or UMAP), clustering, mutual information, and vector quantization to uncover subtle chemical differences and discover novel material phases. Installable at [pypi.org eelsmapper](https://pypi.org/search/?q=eelsmapper)
+**[eelsmapper](https://zhenyuan992.github.io/eelsmapper/index.html)** is a data-driven pipeline for analyzing STEM-EELS spectra to perform high-resolution compositional mapping without relying on reference spectra. It integrates PCA, t-SNE (and/or UMAP), clustering, mutual information, and vector quantization to uncover subtle chemical differences and discover novel material phases. Installable with `pip install eelsmapper` from [pypi.org eelsmapper](https://pypi.org/search/?q=eelsmapper)
 
 <!-- ![Overall schematic of eelsmapper](image_schematic.png) -->
 

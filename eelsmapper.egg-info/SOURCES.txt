@@ -7,3 +7,14 @@ eelsmapper.egg-info/SOURCES.txt
 eelsmapper.egg-info/dependency_links.txt
 eelsmapper.egg-info/requires.txt
 eelsmapper.egg-info/top_level.txt
+eelsmapper/analysis/__init__.py
+eelsmapper/analysis/mutual_info.py
+eelsmapper/analysis/vector_quant.py
+eelsmapper/clustering/__init__.py
+eelsmapper/clustering/kmeans.py
+eelsmapper/embedding/__init__.py
+eelsmapper/embedding/tsne.py
+eelsmapper/preprocessing/__init__.py
+eelsmapper/preprocessing/pca_denoising.py
+eelsmapper/visualization/__init__.py
+eelsmapper/visualization/plot.py
