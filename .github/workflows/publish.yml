@@ -2,29 +2,28 @@ name: Publish README to GitHub Pages
 
 on:
   push:
-    branches: [main]  # or 'master'
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18'
 
-      - run: |
+      - name: Prepare site
+        run: |
           mkdir -p site
           cp README.md site/index.md
 
-      - uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./site
-          destination: ./_site
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: ./_site
+          name: github-pages
+          path: site
 
-      - uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
