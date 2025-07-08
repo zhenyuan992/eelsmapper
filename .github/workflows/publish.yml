@@ -16,12 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Prepare site
+      - name: Copy README
         run: |
-          mkdir -p site
+          mkdir site
           cp README.md site/index.md
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
@@ -30,8 +30,5 @@ jobs:
           name: github-pages
           path: site
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: actions/deploy-pages@v2
-
-
-        
