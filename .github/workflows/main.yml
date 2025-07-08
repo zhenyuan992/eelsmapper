@@ -1,0 +1,34 @@
+name: Publish README to GitHub Pages2
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy README2
+        run: |
+          mkdir site
+          cp README.md site/index.md
+
+      - name: Setup GitHub Pages2
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact2
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: site
+
+      - name: Deploy2
+        uses: actions/deploy-pages@v2
