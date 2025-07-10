@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
 Name: eelsmapper
-Version: 0.2.3
-Summary: Data-driven analysis pipeline for STEM-EELS spectra. See project at https://zhenyuan992.github.io/eelsmapper
+Version: 0.2.5
+Summary: Data-driven analysis pipeline for STEM-EELS spectra. See project at <a href="https://zhenyuan992.github.io/eelsmapper"> https://zhenyuan992.github.io/eelsmapper </a>
 Author: Yeo Zhen Yuan
 Author-email: yeozy@nus.edu.sg
 Requires-Python: >=3.8

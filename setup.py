@@ -7,8 +7,8 @@ long_description = (this_dir / "README.md").read_text(encoding="utf-8")
 
 setup(
     name='eelsmapper',
-    version='0.2.3',
-    description='Data-driven analysis pipeline for STEM-EELS spectra. See project at https://zhenyuan992.github.io/eelsmapper',
+    version='0.2.5',
+    description='Data-driven analysis pipeline for STEM-EELS spectra. See project at <a href="https://zhenyuan992.github.io/eelsmapper"> https://zhenyuan992.github.io/eelsmapper </a>',
     author='Yeo Zhen Yuan',
     author_email='yeozy@nus.edu.sg',
     packages=find_packages(),
