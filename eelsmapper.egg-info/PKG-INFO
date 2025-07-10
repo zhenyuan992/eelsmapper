@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
 Name: eelsmapper
-Version: 0.2.2
-Summary: Data-driven analysis pipeline for STEM-EELS spectra
+Version: 0.2.3
+Summary: Data-driven analysis pipeline for STEM-EELS spectra. See project at https://zhenyuan992.github.io/eelsmapper
 Author: Yeo Zhen Yuan
 Author-email: yeozy@nus.edu.sg
 Requires-Python: >=3.8
@@ -51,6 +51,19 @@ STEM-EELS data is high-dimensional and noisy, making it challenging to interpret
 `pip install eelsmapper`
 
 ---
+
+## Demo:
+
+``` python
+# assuming you have installed with !pip install eelsmapper
+from eelsmapper.pipeline import run_pipeline
+import numpy as np
+
+data = np.load("specs.npz")["arr_0"]
+data = data.reshape(-1,data.shape[-1])
+
+run_pipeline( data )
+```
 
 ## Notes:
 
