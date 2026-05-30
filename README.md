@@ -23,18 +23,51 @@ STEM-EELS data is high-dimensional and noisy, making it challenging to interpret
 - Enhancing signal quality (Vector Quantization)
 - Discovering new material phases without needing reference spectra
 
+---
+
+## Installation
+
+To install the released package from PyPI:
+
+```bash
+pip install eelsmapper
+```
+
+For local development, clone the repository, create a virtual environment, and install the requirements:
+
+```bash
+git clone https://github.com/zhenyuan992/eelsmapper.git
+cd eelsmapper
+
+python -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+pip install -e .
+```
+
+On Windows, activate the virtual environment with:
+
+```bash
+.venv\Scripts\activate
+```
 
 ---
 
-## Installation:
+## Demo
 
-`pip install eelsmapper`
+The sample dataset is included at `sample_data/specs.npz`. From the repository root, run:
 
----
+```bash
+python sample_script/demo.py
+```
 
-## Demo:
+The demo loads `sample_data/specs.npz`, runs the pipeline, and prints the shape of each output.
 
-``` python
+You can also run the pipeline manually:
+
+```python
 from eelsmapper.pipeline import run_pipeline
 import numpy as np
 
@@ -44,9 +77,11 @@ results = run_pipeline(data)
 print(results.keys())
 ```
 
-The sample dataset is included at `sample_data/specs.npz`; from the repository root, load it with `np.load("sample_data/specs.npz")["arr_0"]`. The pipeline accepts either a 3-D spectra cube or a 2-D array of flattened spectra.
+The pipeline accepts either a 3-D spectra cube or a 2-D array of flattened spectra.
 
-## Notes:
+---
+
+## Notes
 
 This package is a python implementation of the following conference papers/talks:
 
@@ -58,10 +93,9 @@ PDF found at https://www.scienceopen.com/hosted-document?doi=10.14293/APMC13-202
 
 PDF found at https://openreview.net/forum?id=dw8DFI2esQ
 
-## How to cite:
+## How to cite
 
     Yeo ZY, Lai W, Lee JH, Balakrishnan D, Özyilmaz B, Duane Loh N. Data-driven analysis of STEM-EELS spectra for high-resolution compositional mapping. 13th Asia Pacific Microscopy Congress 2025 (APMC13). 2025; 303. doi:10.14293/apmc13-2025-0303
     
 
     Yeo ZY, Lai W, Lee JH, Balakrishnan D, Özyilmaz B, Duane Loh N. Unsupervised machine learning for phase identification and characterization of high-resolution STEM EELS in novel battery materials. 2025. Available: https://openreview.net/pdf?id=dw8DFI2esQ
-  
