@@ -45,6 +45,8 @@ data = data.reshape(-1,data.shape[-1])
 run_pipeline( data )
 ```
 
+The sample dataset is included at `sample_data/specs.npz`; from the repository root, load it with `np.load("sample_data/specs.npz")["arr_0"]` before reshaping it as shown above.
+
 ## Notes:
 
 This package is a python implementation of the following conference papers/talks:
