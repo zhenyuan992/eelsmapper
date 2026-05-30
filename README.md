@@ -35,17 +35,16 @@ STEM-EELS data is high-dimensional and noisy, making it challenging to interpret
 ## Demo:
 
 ``` python
-# assuming you have installed with !pip install eelsmapper
 from eelsmapper.pipeline import run_pipeline
 import numpy as np
 
-data = np.load("specs.npz")["arr_0"]
-data = data.reshape(-1,data.shape[-1])
+data = np.load("sample_data/specs.npz")["arr_0"]
+results = run_pipeline(data)
 
-run_pipeline( data )
+print(results.keys())
 ```
 
-The sample dataset is included at `sample_data/specs.npz`; from the repository root, load it with `np.load("sample_data/specs.npz")["arr_0"]` before reshaping it as shown above.
+The sample dataset is included at `sample_data/specs.npz`; from the repository root, load it with `np.load("sample_data/specs.npz")["arr_0"]`. The pipeline accepts either a 3-D spectra cube or a 2-D array of flattened spectra.
 
 ## Notes:
 
